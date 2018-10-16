@@ -61,7 +61,7 @@ Payload itself is a __base64__ encoded __json__ with the following properties:
 ```$xslt
 {
     "email": "h@ma.to", // user's email or alternative lookup field
-    "message": "message that you've signed", // sha256 encoded string
+    "message": "message that you've signed", // string
     "signature": "3046022100a94c1a..." // signed message
 }
 ```
