@@ -1,6 +1,9 @@
 # Ecdsa Auth
-[ECDSA](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm) authentication for [Laravel](https://laravel.com)/[Dingo API](https://github.com/dingo/api)
-based on [elliptic-php](https://github.com/simplito/elliptic-php) and [keccak](https://github.com/kornrunner/php-keccak) packages.
+
+Passwordless authentication based on public/private key signatures.
+
+[ECDSA](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm) implementation for [Laravel](https://laravel.com)/[Dingo API](https://github.com/dingo/api)
+with the help of [elliptic-php](https://github.com/simplito/elliptic-php) and [keccak](https://github.com/kornrunner/php-keccak) packages.
 
 ## Instalation
 ```$xslt
