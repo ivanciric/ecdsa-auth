@@ -155,7 +155,7 @@ class Authenticator extends Authorization
             );
         }
 
-        return $address == $this->pubKeyToAddress($pubkey);
+        return strtolower($address) == strtolower($this->pubKeyToAddress($pubkey));
     }
 
     /**
