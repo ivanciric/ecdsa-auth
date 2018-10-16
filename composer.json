@@ -3,6 +3,7 @@
     "description": "ECDSA based authentication for Laravel/Dingo API",
     "type": "library",
     "require": {
+        "dingo/api": "2.0.0-alpha1",
         "simplito/elliptic-php": "1.0.4",
         "kornrunner/keccak": "^1.0"
     },
@@ -16,7 +17,17 @@
     ],
     "autoload": {
         "psr-4": {
-            "ivanciric\\ecdsa-auth\\": "src"
+            "ivanciric\\EcdsaAuth\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ivanciric\\EcdsaAuth\\ServiceProvider"
+            ],
+            "aliases": {
+                "EcdsaAuth": "ivanciric\\EcdsaAuth\\AuthenticatorFacade"
+            }
         }
     }
 }

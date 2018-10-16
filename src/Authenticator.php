@@ -16,7 +16,7 @@ use Symfony\Component\HttpKernel\Exception\UnauthorizedHttpException;
  * Class EcdsaAuth
  * @package App\Api\V1\Services\Auth
  */
-class EcdsaAuth extends Authorization
+class Authenticator extends Authorization
 {
     /**
      * Eliptic Curve library.

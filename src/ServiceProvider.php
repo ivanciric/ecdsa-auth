@@ -1,9 +1,9 @@
 <?php
 namespace ivanciric\EcdsaAuth;
 
-use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\ServiceProvider as LaravelServiceProvider;
 
-class EcdsaAuthServiceProvider extends ServiceProvider
+class ServiceProvider extends LaravelServiceProvider
 {
     /**
      * Bootstrap the application services.
@@ -29,10 +29,10 @@ class EcdsaAuthServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->singleton(EcdsaAuth::class, function () {
-            return new EcdsaAuth();
+        $this->app->singleton(Authenticator::class, function () {
+            return new Authenticator();
         });
 
-        $this->app->alias(EcdsaAuth::class, 'ecdsa-auth');
+        $this->app->alias(Authenticator::class, 'ecdsa-auth');
     }
 }
