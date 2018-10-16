@@ -1,0 +1,22 @@
+{
+    "name": "ivanciric/ecdsa-auth",
+    "description": "ECDSA based authentication for Laravel/Dingo API",
+    "type": "library",
+    "require": {
+        "simplito/elliptic-php": "1.0.4",
+        "kornrunner/keccak": "^1.0"
+    },
+    "require-dev": {},
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ivan Ciric",
+            "email": "info@yoshi.tech"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "ivanciric\\ecdsa-auth\\": "src"
+        }
+    }
+}
