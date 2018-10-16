@@ -1,5 +1,6 @@
 # Ecdsa Auth
-ECDSA based authentication for Laravel/Dingo API
+[ECDSA](https://en.wikipedia.org/wiki/Elliptic_Curve_Digital_Signature_Algorithm) authentication for [Laravel](https://laravel.com)/[Dingo API](https://github.com/dingo/api)
+based on [elliptic-php](https://github.com/simplito/elliptic-php) and [keccak](https://github.com/kornrunner/php-keccak) packages.
 
 ## Instalation
 ```$xslt
@@ -22,7 +23,7 @@ After publishing configuration, you can edit the available options in __config/e
 | verification | If you require users to be verified (e.g. email verified) in order to access the data, set this otion to true. Default: __false__ |
 | verified_field | If you've set the verification to true, state the field which marks the user as verified. Default: __email_verified__ |
 | verified_pass_condition | Value of the verified_field that marks the user as verified. Default: __1__ |
-| key_lookup_field | Field which contains the public key of the user. Default: __crypto_key__ |
+| key_lookup_field | Field which contains the public key of the user. This could be Ethereum address or pure Ecdsa public key. Default: __crypto_key__ |
 | authorization_header | Name of the header which holds the authorization payload. Default: __authorization__ |
 | authorization_methods | Methods allowed in the authorization header. They denote supported encryption algorithms. Default: __['eth', 'ecdsa']__ |
 | message_property | Key in the payload which contains the message. Default: __message__ |
