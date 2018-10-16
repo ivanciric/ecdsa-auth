@@ -11,7 +11,7 @@ Library uses package auto-discovery feature, so you don't need to set the servic
 
 Publish the package configuration
 ```$xslt
-php artisan vendor:publish --provider="ivanciric/EcdsaAuth/ServiceProvider"
+php artisan vendor:publish
 ```
 ## Configuration
 After publishing configuration, you can edit the available options in __config/ecdsaauth.php__
