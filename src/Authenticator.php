@@ -84,7 +84,7 @@ class Authenticator extends Authorization
 
             if ($valid) {
                 $this->invalidateHash($authHash);
-                return true;
+                return $user;
             } else {
                 $this->handleError(
                     config(
